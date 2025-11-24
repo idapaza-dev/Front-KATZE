@@ -1,2 +1,5 @@
-@import "tailwindcss";
-/* Reglas globales pequeñas (puedes mover a src/styles si prefieres) */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body { @apply bg-background-light text-[#1b140d] font-display; }
