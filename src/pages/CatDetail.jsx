@@ -38,7 +38,7 @@ export default function CatDetail() {
 
   const getAgeLabel = (age) => {
     if (!age) return 'Edad desconocida';
-    if (age < 1) return `${age} año${age !== 1 ? 's' : ''} (Cachorro)`;
+    if (age < 1) return 'Menos de 1 año (Cachorro)';
     if (age < 3) return `${age} año${age !== 1 ? 's' : ''} (Joven)`;
     if (age < 10) return `${age} año${age !== 1 ? 's' : ''} (Adulto)`;
     return `${age} año${age !== 1 ? 's' : ''} (Senior)`;

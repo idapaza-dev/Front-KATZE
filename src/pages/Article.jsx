@@ -1,5 +1,5 @@
-import React, { useMemo } from 'react';
-import { useParams, Link } from 'react-router-dom';
+import React from 'react';
+import { Link } from 'react-router-dom';
 import Chip from '../components/Chip';
 
 // Mock data - replace with API call when available
@@ -35,13 +35,10 @@ const mockArticle = {
 };
 
 export default function Article() {
-  const { slug } = useParams();
-  
-  // In a real implementation, this would fetch from API based on slug
+  // In a real implementation, slug would be used to fetch from API
+  // const { slug } = useParams();
   // For now, we just use the mock article
-  const article = useMemo(() => {
-    return mockArticle;
-  }, [slug]);
+  const article = mockArticle;
 
   if (!article) {
     return (
